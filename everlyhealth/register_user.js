@@ -9,7 +9,7 @@
     const element = formElements[el];
     element.value = value;
 
-    events.each((event) => fireEvent(element, event));
+    events.forEach((event) => fireEvent(element, event));
 
     console.log(`Set input ${el} = ${value}`);
   };
