@@ -1,8 +1,16 @@
 (function () {
+  const events = [new Event("input"), new Event("change")];
+
+  const fireEvent = function (element, event) {
+    element.disptchEvent(event);
+  };
+
   const setFormElement = function (formElements, el, value) {
-    formElements[el].value = value;
-    formElements[el].focus();
-    
+    const element = formElements[el];
+    element.value = value;
+
+    events.each((event) => fireEvent(element, event));
+
     console.log(`Set input ${el} = ${value}`);
   };
 
