@@ -2,7 +2,7 @@
   const events = [new Event("input"), new Event("change")];
 
   const fireEvent = function (element, event) {
-    element.disptchEvent(event);
+    element.dispatchEvent(event);
   };
 
   const setFormElement = function (formElements, el, value) {
