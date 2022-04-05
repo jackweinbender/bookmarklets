@@ -3,6 +3,7 @@
 
   const fireEvent = function (element, event) {
     element.dispatchEvent(event);
+    console.log(`Fired Event ${event.type})
   };
 
   const setFormElement = function (formElements, el, value) {
