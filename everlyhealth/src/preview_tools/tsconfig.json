@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "removeComments": true,
+    "outDir": "dist"
+  },
+  "files": ["index.ts"]
+}

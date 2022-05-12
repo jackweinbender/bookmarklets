@@ -1,0 +1,1 @@
+export const url_for = (link) => new URL(link.path, link.base).href
